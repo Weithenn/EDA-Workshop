@@ -14,7 +14,7 @@
       condition: event.payload.message == "DevOpsDays"      
       # Define the action we should take should the condition be met
       action:
-        run_job_template:
+        run_playbook:
           name: say-thanks.yaml
     - name: Really?
       condition: event.payload.message != "DevOpsDays"
