@@ -15,8 +15,7 @@
       # Define the action we should take should the condition be met
       action:
         run_job_template:
-          name: "Playbook - Say Thanks"
-          organization: Default
+          name: say-thanks.yaml
     - name: Really?
       condition: event.payload.message != "DevOpsDays"
       action:
@@ -24,6 +23,7 @@
           msg: "Really? {{ event.payload.message }}. Would you like to reconsider?"
 
 
-### Execute the following command in EDA terminal to test ###
-# curl -H 'Content-Type: application/json' -d "{\"message\": \"Cloud Summit\"}" eda.lab.weithenn.org/endpoint
-# curl -H 'Content-Type: application/json' -d "{\"message\": \"DevOpsDays\"}" eda.lab.weithenn.org/endpoint
+### Execute the following command in different terminal to test ###
+# sudo ansible-rulebook --rulebook 02_webhook.yaml -i inventory --print-events
+# curl -H 'Content-Type: application/json' -d "{\"message\": \"Cloud Summit\"}" 127.0.0.1:6000/endpoint
+# curl -H 'Content-Type: application/json' -d "{\"message\": \"DevOpsDays\"}" 127.0.0.1:6000/endpoint
