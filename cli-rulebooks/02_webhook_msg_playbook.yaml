@@ -24,6 +24,6 @@
 
 
 ### Execute the following command in different terminal to test ###
-# sudo ansible-rulebook --rulebook 02_webhook.yaml -i inventory --print-events
+# sudo ansible-rulebook --rulebook 02_webhook_msg_playbook.yaml -i inventory --print-events
 # curl -H 'Content-Type: application/json' -d "{\"message\": \"Cloud Summit\"}" 127.0.0.1:6000/endpoint
 # curl -H 'Content-Type: application/json' -d "{\"message\": \"DevOpsDays\"}" 127.0.0.1:6000/endpoint
