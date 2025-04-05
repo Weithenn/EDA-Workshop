@@ -6,6 +6,6 @@ all:
     appnodes:
       hosts:
         eda:
-          ansible_password: EDAWorkshop@2024
+          ansible_password: EDA@20250416
           ansible_user: root
     ungrouped: {}
