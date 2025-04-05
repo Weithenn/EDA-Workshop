@@ -60,6 +60,6 @@
           name: /tmp/eda-app/deploy.yml
 
 
-### Execute the following command for modify deploy.yml ###
+##### Execute the following command for modify deploy.yml #####
 # cd /home/dragon/EDA-Workshop/gitops-pr-push
 # sudo ansible-rulebook --rulebook webhook_pr_push.yaml -i inventory.yaml --print-events

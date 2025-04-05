@@ -30,8 +30,8 @@
   - name: pull_request -- Comment on PR
     ansible.builtin.uri:
       url: http://gitea.lab.weithenn.org:3000/api/v1/repos/{{ ansible_eda.event.author }}/{{ ansible_eda.event.repo_name }}/issues/{{ ansible_eda.event.pr_id }}/comments
-      user: dragon
-      password: EDAWorkshop@2024
+      user: dod-tokyo
+      password: EDA@20250416
       method: POST
       headers:
         Sudo: ansible
