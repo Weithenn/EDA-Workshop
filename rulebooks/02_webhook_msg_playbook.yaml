@@ -25,5 +25,5 @@
 
 
 ### Execute the following command in EDA terminal to test ###
-# curl -H 'Content-Type: application/json' -d "{\"message\": \"Cloud Summit\"}" eda.lab.weithenn.org/endpoint
+# curl -H 'Content-Type: application/json' -d "{\"message\": \"DoD Taipei\"}" eda.lab.weithenn.org/endpoint
 # curl -H 'Content-Type: application/json' -d "{\"message\": \"DevOpsDays\"}" eda.lab.weithenn.org/endpoint

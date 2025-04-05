@@ -16,9 +16,9 @@
       # Define the action we should take should the condition be met
       action:
         debug:
-          msg: "You are right. {{ event.payload.message }} Taipei 2024. Good Job!"
+          msg: "You are right. {{ event.payload.message }} Tokyo 2025. Good Job!"
 
 
 ### Execute the following command in EDA terminal to test ###
-# curl -H 'Content-Type: application/json' -d "{\"message\": \"Cloud Summit\"}" eda.lab.weithenn.org/endpoint
+# curl -H 'Content-Type: application/json' -d "{\"message\": \"DoD Taipei\"}" eda.lab.weithenn.org/endpoint
 # curl -H 'Content-Type: application/json' -d "{\"message\": \"DevOpsDays\"}" eda.lab.weithenn.org/endpoint
