@@ -16,5 +16,5 @@
 
 
 ##### Execute the following command for Gitea test #####
-# cd /home/dragon/EDA-Workshop/rulebooks
+# cd /home/dragon/EDA-Workshop/gitops-push
 # sudo ansible-rulebook --rulebook webhook_test.yaml -i inventory.yaml --print-events
