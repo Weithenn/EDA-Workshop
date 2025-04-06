@@ -4,7 +4,7 @@
   sources:
     - ansible.eda.webhook:
         host: 0.0.0.0
-        port: 6007
+        port: 6005
       filters:
         - ansible.eda.json_filter:
             exclude_keys: ['sender', 'owner']
